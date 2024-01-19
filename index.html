@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3d542a077f.js" crossorigin="anonymous"></script>
+    <title>Место силы</title>
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class='row nav row-no-padding'>
+          <div class="col-md-6"></div>
+        </div>
+        <div class='row row-no-padding'>
+          <div class='col-lg-4  col-md-4 col-sm-12 offset-md-1  header-right'>
+          <div class='d-flex nav'>
+            <p class="logo">МЕСТО СИЛЫ</p>
+          </div>
+
+
+            <h1>ДОМАШНЯЯ БАНЯ<br>НА ДРОВАХ С ИДЕАЛЬНЫМ ПАРОМ <br>В ВОРОНЕЖЕ</h1>
+            <p>Добро пожаловать в нашу уютную баню! Отвлекитесь от суеты и окунитесь в атмосферу тепла и комфорта. Наша баня - ваш уголок релаксации.</p>
+            <div class="more">
+                <a href='#arenda'>подробнее</a>
+            </div>
+            <div class="contacts d-none d-lg-flex d-md-block">
+              <p>Воронеж, ул. Егоровская, д. 10</p>
+              <p>+7 (903) 654-74-47</p>
+            </div>
+          </div>
+          <div class='col-6 offset-1 d-none d-md-flex row header-left row-no-padding'>
+            <div class='col-4 offset-1'><a href='#arenda'>Аренда бани</a></div>
+            <div class='col-3'><a href='#contacts'>Контакты</a></div>
+          </div>
+          <div class="contacts d-flex d-md-none">
+            <p>Воронеж, ул. Егоровская, д. 10</p>
+            <a>+7 (903) 654-74-47</a>
+          </div>
+        </div>
+        <div class='d-flex justify-content-center row row-no-padding first-part'>
+          <div class='heading'>
+            <h1 id='arenda'>АРЕНДА БАНИ</h1>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="swiper-container slider">
+              <div class="swiper-wrapper slides">
+                <div class="slide swiper-slide"><img src="/img/1_1.svg" alt="Slide 1"></div>
+                <div class="slide swiper-slide"><img src="/img/1_2.svg" alt="Slide 2"></div>
+                <div class="slide swiper-slide"><img src="/img/1_3.svg" alt="Slide 3"></div>
+                <div class="slide swiper-slide"><img src="/img/1_4.svg" alt="Slide 4"></div>
+
+              </div>
+            </div>
+            <div class="small-slides">
+              <img class="small-slide current" src="/img/1_1.svg" alt="Slide 1" onclick="changeSlide(0)">
+              <img class="small-slide" src="/img/1_2.svg" alt="Slide 2" onclick="changeSlide(1)">
+              <img class="small-slide" src="/img/1_3.svg" alt="Slide 3" onclick="changeSlide(2)">
+              <img class="small-slide" src="/img/1_4.svg" alt="Slide 4" onclick="changeSlide(3)">
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <table >
+
+              <tbody>
+                <tr>
+                  <td scope="row">ВМЕСТИМОСТЬ</tв>
+                  <td colspan="3" class="border-td">6 - 8 человек</td>
+                </tr>
+                <tr>
+                  <td scope="row">УСЛОВИЯ</td>
+                  <td class="border-td" colspan="3">минимальное время аренды - 2 часа</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td no-padding" colspan="3">посещение только по предварительной записи</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td" colspan="3">дубовые веники, полотенца, шапки, простыни за дополнительную плату</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left">РЕЖИМ РАБОТЫ</tв>
+                  <td colspan="3" class="border-td">ежедневно  8:00 - 0:00</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left">СТОИМОСТЬ</td>
+                  <td class="border-td" colspan="1">8:00 - 11:00</td>
+                  <td class="no-padding-rl" colspan="1">1000 руб/час</td>
+
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td no-padding" colspan="1">11:00 - 0:00 </td>
+                  <td class="no-padding-rl" colspan="1">2 часа - 3000 руб/час</td>
+                </tr>   
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td no-padding" colspan="1"> </td>
+                  <td class="no-padding-rl" colspan="1">от 3 часов - 1300 руб/час</td>
+                </tr>   
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td no-padding" colspan="1">праздники </td>
+                  <td class="no-padding-rl" colspan="1">1500 руб/час</td>
+                </tr> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class='d-flex justify-content-center row row-no-padding second-part'>
+          <div class="col-md-6 col-sm-12 order-md-1 order-2">
+            <table >
+
+              <tbody>
+                <tr>
+                  <td scope="row">ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</tв>
+                  <td colspan="3" class="border-td">домашняя баня нa дубовых дpoвах</td>
+                </tr>
+                <tr>
+                  <td scope="row"></td>
+                  <td class="border-td" colspan="3">комната отдыхa, душевая</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td class="border-td" colspan="3">полы с подогревом</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">ушат с холодной водой</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">телевизор, холодильник</td>
+                </tr>            
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">чайник и посуда</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">Wi-Fi, фен</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">мангал, паркoвка</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></tв>
+                  <td colspan="3" class="border-td">тапочки, aроматические масла</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6 col-sm-12 order-md-2 order-1">
+            <div class="slider swiper-container_2">
+              <div class="slides_2 swiper-wrapper">
+                <div class="slide_2 swiper-slide"><img src="/img/2_1.svg" alt="Slide 1"></div>
+                <div class="slide_2 swiper-slide"><img src="/img/2_2.svg" alt="Slide 2"></div>
+                <div class="slide_2 swiper-slide"><img src="/img/2_3.svg" alt="Slide 3"></div>
+                <div class="slide_2 swiper-slide"><img src="/img/2_4.svg" alt="Slide 4"></div>
+                <div class="slide_2 swiper-slide"><img src="/img/2_5.svg" alt="Slide 5"></div>
+
+
+              </div>
+            </div>
+            <div class="small-slides_2">
+              <img class="small-slide_2 current" src="/img/2_1.svg" alt="Slide 5" onclick="changeSlide_2(1)">
+              <img class="small-slide_2" src="/img/2_2.svg" alt="Slide 6" onclick="changeSlide_2(2)">
+              <img class="small-slide_2" src="/img/2_3.svg" alt="Slide 7" onclick="changeSlide_2(3)">
+              <img class="small-slide_2" src="/img/2_4.svg" alt="Slide 8" onclick="changeSlide_2(4)">
+              <img class="small-slide_2" src="/img/2_5.svg" alt="Slide 9" onclick="changeSlide_2(5)">
+
+
+            </div>
+          </div>
+        </div>
+        <div class='d-flex justify-content-center row row-no-padding third-part'>
+          <div class='heading'>
+            <h1 id='contacts'>КОНТАКТЫ</h1>
+          </div>
+          <div class="col-md-12 col-sm-12 d-none d-md-flex">
+            <table >
+
+              <tbody>
+                <tr>
+                  <td scope="row"  class="table-left">Для оформления предварительной записи звоните или пишите на WhatsApp</td>
+                  <td colspan="1" class="border-td contact-info"><i class="fa-solid fa-phone"></i>ТЕЛЕФОН</td>
+                  <td colspan="1"class="contact-info" ><a>+7 (903) 654-74-47</a></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"  class="table-left">А также вы можете задать интересующие вас вопросы по электронной почте</td>
+                  <td colspan="1" class="border-td contact-info"><i class="fa-solid fa-location-dot"></i>АДРЕС</td>
+                  <td colspan="1"class="contact-info" ><a href="https://yandex.ru/maps/?ol=geo&text=Егоровская улица, 10&sll=39.321281,51.711274&sspn=0.005100,0.008210" target="_blank">Воронеж, ул. Егоровская, д. 10</a></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="table-left"></td>
+                  <td colspan="1" class="border-td contact-info"><i class="fa-solid fa-envelope"></i>ПОЧТА</td>
+                  <td colspan="1"class="contact-info" >9036547447@mail.ru</td>
+                </tr>       
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-11 col-sm-11 d-flex d-md-none mobile-contacts">
+            <table >
+
+              <tbody>
+                <tr>
+                  <td colspan="3">Для оформления предварительной записи звоните или пишите на WhatsApp</td>
+                </tr>
+                <tr>
+                  <td scope="row" colspan="3">А также вы можете задать интересующие вас вопросы по электронной почте</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="contact-info"><i class="fa-solid fa-phone"></i><a>+7 (903) 654-74-47</a></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="contact-info"><i class="fa-solid fa-location-dot"></i><a href="https://yandex.ru/maps/?ol=geo&text=Егоровская улица, 10&sll=39.321281,51.711274&sspn=0.005100,0.008210"  target="_blank">Воронеж, ул. Егоровская, д. 10</a></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="contact-info"><i class="fa-solid fa-envelope"></i><a>9036547447@mail.ru</a></td>
+                </tr>       
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="row">
+          <div class=' col-sm-12 col-md-5 offset-md-1'>
+            <div class='d-flex  nav'>
+              <p class="logo">МЕСТО СИЛЫ</p>
+            </div>
+          </div>
+          <div class=' col-sm-2 '>
+            <div class='nav d-none d-md-flex'>
+              <a href='#arenda'>Аренда бани</a>
+            </div>
+          </div>
+          <div class=' col-sm-3 '>
+            <div class='nav d-none d-md-flex'>
+              <p class="contact-footer"><i class="fa-solid fa-phone"></i>+7 (903) 654-74-47</p>
+            </div>
+          </div>
+            <div class=' col-sm-2 offset-6'>
+              <div class='nav d-none d-md-flex'>
+                <a href='#contacts'>Контакты</a>
+              </div>
+            </div>
+            <div class=' col-sm-3 '>
+              <div class='nav d-none d-md-flex'>
+                <a class="contact-footer" href="https://yandex.ru/maps/?ol=geo&text=Егоровская улица, 10&sll=39.321281,51.711274&sspn=0.005100,0.008210"  target="_blank"><i class="fa-solid fa-location-dot"></i>Воронеж, ул. Егоровская, д. 10</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+      <script>
+      const small_slides_1 = document.querySelectorAll('.small-slide');
+const small_slides_2 = document.querySelectorAll('.small-slide_2');
+
+var swiper_1 = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+var swiper_2 = new Swiper('.swiper-container_2', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+function changeSlide(index) {
+  swiper_1.slideTo(index);
+  small_slides_1.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('current');
+    } else {
+      slide.classList.remove('current');
+    }
+  });
+}
+
+function changeSlide_2(index) {
+  swiper_2.slideTo(index);
+  small_slides_2.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('current');
+    } else {
+      slide.classList.remove('current');
+    }
+  });
+}
+
+
+swiper_1.on('slideChange', function () {
+  let currentIndex = swiper_1.realIndex;
+  changeSlide(currentIndex);
+});
+
+small_slides_1.forEach((slide, index) => {
+  slide.addEventListener('click', () => {
+    changeSlide(index);
+  });
+});
+
+swiper_2.on('slideChange', function () {
+  let currentIndex = swiper_2.realIndex;
+  changeSlide_2(currentIndex);
+});
+
+
+small_slides_2.forEach((slide, index) => {
+  slide.addEventListener('click', () => {
+    changeSlide_2(index);
+  });
+});   
+      </script>
+</body>
+</html>
