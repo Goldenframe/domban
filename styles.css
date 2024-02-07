@@ -336,10 +336,7 @@
       table td, th{
         padding:0.7em 1em;
       }
-      
-      .fourth-part p{
-        padding: 0.7em 1em;
-      }
+
       .no-padding{
         padding: 1em;
       }
@@ -696,6 +693,10 @@
         padding: 0;
       }
       
+      .fourth-part{
+        font-size: 0.93em;
+
+      }
       .slides, .slides_2{
         padding: 0.9em 0;
       }
@@ -773,6 +774,11 @@
       .reviews{
         margin-top: 2.5em;
       }
+
+      .fourth-part{
+        font-size: 0.93em;
+
+      }
       .reviews a{
         padding: 0.7em 3.7em;
       }
@@ -780,9 +786,7 @@
       .reviews div{
         margin-bottom: 2.5em;
       }
-      .fourth-part{
-        font-size: 1em;
-      }
+
   
       .contacts{
         color:rgba(83, 35, 14, 0.5);
