@@ -1,880 +1,924 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .body{
-    background-color: #FCF9F5;
-  }
-  
-  .row-no-padding {
-    [class*="col-"] {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-  @font-face {
-    font-family: "TriodPostnaja";
-    src: url("./TriodPostnaja.ttf");
-  }
-  
-  @font-face {
-    font-family: "Manrope-VariableFont_wght";
-    src: url("./Manrope-VariableFont_wght.ttf");
-  }
-  
-  .container-fluid{
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: #FCF9F5;
-    overflow-x: hidden;
-  
-  }
-  
-  .header-right{
-    padding: 1em 0;
-  }
-  
-  .header-right p:nth-child(3){
-    font-family: "Manrope-VariableFont_wght";
-    font-size: 1.15em;
-  }
-  
-  .logo{
-    font-family: "TriodPostnaja";
-    font-size: 1.3em;
-    margin-top: 1em;
-  }
-  
-  .header-right h1{
-    font-family: 'TriodPostnaja';
-    margin: 2.2em 0 1em 0;
-    font-size: 3em;
-    transition: 1s;
-    color: #231F1D;
-  }
-  .contacts{
-    font-family: "Manrope-VariableFont_wght";
-    display: inline-flex;
-  }
-  
-  .contacts p, .contacts a{
-    margin-right: 1.2em;
-  }
-  .contacts a{
-    color: #231F1D;
-    text-decoration: none;
-  }
-  .header-left{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50.05%),
-    url("./img/Rectangle\ 10.webp"); 
-    background-position: bottom center;   
-    padding: 2.1em 0;
-    background-size: cover;
-    transition: 1s;
-  
-  }
-  
-  .header-left a, .footer a, .footer .contact-footer{
-    text-decoration:  none;
-    font-family: "Manrope-VariableFont_wght";
-    color: #FCF9F5;
-    font-size: 1.1em;
-  }
-  
-  .footer a, .footer .contact-footer{
-    align-items: center;
-    margin-top: 1em;
-  }
-  .footer i{
-    padding: 0 0.5em;
-  }
-  
-  .heading{
-    text-align: center;
-    font-family: 'TriodPostnaja';
-    padding: 6em 0;
-  }
-  
-  .more{
-    margin: 9em 0;
-  
-  }
-  
-  .more a{
-    text-decoration: none;
-    font-size: 1.2em;
-    background-color: #53230E;
-    border-radius: 50px;
-    color: #FCF9F5;
-    padding: 0.7em 3.9em;
-    font-family: "Manrope-VariableFont_wght";
-    transition: 1s;
-  
-  }
-  
-  .more a:hover{
-    background-color: #FCF9F5;
-    color: #53230E;
-    border: 2px solid #53230E;
-  }
-  
-  .mob-links a{
-  
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-  .slider {
-    width: 100%;
-    overflow: hidden;
-  }
-  .slides, .slides_2, .swiper-container {
-    display: flex;
-    transition: transform 1s ease-in-out;
-  }
-  .slide, .slide_2, .swiper-wrapper {
-    flex: 0 0 100%;
-    display: none;
-  }
-  .slide.active, .slide_2.active, .swiper-slide.active{
-    display: block;
-    width: 100%;
-  }
-  .small-slide.current, .small-slide_2.current{
-    border: #53230E 3px solid;
-  }
-  .slide img, .slide_2 img, .swiper-slide img{
-    width: 100%;
-  }
-  .small-slides, .small-slides_2{
-    display: flex;
-    justify-content: center;
-  }
-  .small-slide, .small-slide_2{
-    border: none;
-    margin: 2em 1em;
-    width: 4em;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  table{
-    font-size: 1.15em;
-    color:rgba(35, 31, 29, 1);
-    width: 90% !important;
-    margin: 0 auto;
-    border-bottom-width: 0 ;
-    padding: 1em 2em ;
-  }
-  
-  .border-td{
-    border-left:rgba(83, 35, 14, 0.25) solid 2px;
-    width: 9em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #fcf9f5;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  
-  .table-left{
-    width: 14.2em;
-  }
-  
-  .no-padding{
-    padding: 0 2.8em ;
-  }
-  
-  .no-padding-rl{
-    padding: 1.1em 0;
-  }
-  
-  table td, th{
-    background-color: #FCF9F5 !important;
-    padding: 1.1em 2.8em;
-  }
-  .second-part{
-    padding-top: 7.5em;
-  }
-  .third-part .table-left{
-    width: 50%;
-    padding-right: 8em;
-  }
-  .third-part .contact-info{
-    width: 13em;
-    padding-left: 0;
-  }
-  .third-part .border-td{
-    padding-left: 5.3em;
-    height: 67px;
-  }
-  .third-part .border-td i{
-    padding: 0 0.7em;
-    color: #53230E;
-  }
-  .third-part .contact-info i{
-    padding: 0 0.7em;
-    color: #53230E;
-  }
-  .mobile-contacts table{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-  }
-  .mobile-contacts a, .third-part a{
-    text-decoration: underline;
-    color: rgba(91, 34, 9, 1);
-    transition: text-decoration 2s;
+}
+@font-face {
+  font-family: "TriodPostnaja";
+  src: url("./TriodPostnaja.ttf");
+}
 
+@font-face {
+  font-family: "Manrope-VariableFont_wght";
+  src: url("./Manrope-VariableFont_wght.ttf");
+}
+
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #fcf9f5;
+  overflow-x: hidden;
+}
+
+.header-right {
+  padding: 1em 0;
+}
+
+.header-right p:nth-child(3) {
+  font-family: "Manrope-VariableFont_wght";
+  font-size: 1.15em;
+}
+
+.logo {
+  font-family: "TriodPostnaja";
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+.header-right h1 {
+  font-family: "TriodPostnaja";
+  margin: 2.2em 0 1em 0;
+  font-size: 3em;
+  transition: 1s;
+  color: #231f1d;
+}
+.contacts {
+  font-family: "Manrope-VariableFont_wght";
+  display: inline-flex;
+}
+
+.contacts p,
+.contacts a {
+  margin-right: 1.2em;
+}
+.contacts a {
+  color: #231f1d;
+  text-decoration: none;
+}
+.header-left {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0) 50.05%
+    ),
+    url("./img/Rectangle\ 10.webp");
+  background-position: bottom center;
+  padding: 2.1em 0;
+  background-size: cover;
+  transition: 1s;
+}
+
+.header-left a,
+.footer a,
+.footer .contact-footer {
+  text-decoration: none;
+  font-family: "Manrope-VariableFont_wght";
+  color: #fcf9f5;
+  font-size: 1.1em;
+}
+
+.footer a,
+.footer .contact-footer {
+  align-items: center;
+  margin-top: 1em;
+}
+.footer i {
+  padding: 0 0.5em;
+}
+
+.heading {
+  text-align: center;
+  font-family: "TriodPostnaja";
+  padding: 6em 0;
+}
+
+.more {
+  margin: 9em 0;
+}
+
+.more a {
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #53230e;
+  border-radius: 50px;
+  color: #fcf9f5;
+  padding: 0.7em 3.9em;
+  font-family: "Manrope-VariableFont_wght";
+  transition: 1s;
+}
+
+.more a:hover {
+  background-color: #fcf9f5;
+  color: #53230e;
+  border: 2px solid #53230e;
+}
+
+.mob-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slides,
+.slides_2,
+.swiper-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+.slide,
+.slide_2,
+.swiper-wrapper {
+  flex: 0 0 100%;
+  display: none;
+}
+.slide.active,
+.slide_2.active,
+.swiper-slide.active {
+  display: block;
+  width: 100%;
+}
+.small-slide.current,
+.small-slide_2.current {
+  border: #53230e 3px solid;
+}
+.slide img,
+.slide_2 img,
+.swiper-slide img {
+  width: 100%;
+}
+.small-slides,
+.small-slides_2 {
+  display: flex;
+  justify-content: center;
+}
+.small-slide,
+.small-slide_2 {
+  border: none;
+  margin: 2em 1em;
+  width: 4em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table {
+  font-size: 1.15em;
+  color: rgba(35, 31, 29, 1);
+  width: 90% !important;
+  margin: 0 auto;
+  border-bottom-width: 0;
+  padding: 1em 2em;
+}
+
+.border-td {
+  border-left: rgba(83, 35, 14, 0.25) solid 2px;
+  width: 9em;
+  padding-right: 0 !important;
+}
+
+.table-left {
+  width: 14.2em;
+}
+
+.no-padding {
+  padding: 0 2.8em;
+}
+
+.no-padding-rl {
+  padding: 1.1em 0;
+}
+
+table td,
+th {
+  background-color: #fcf9f5 !important;
+  padding: 1.1em 2.8em;
+}
+.second-part {
+  padding-top: 7.5em;
+}
+.fourth-part .table-left {
+  width: 50%;
+  padding-right: 8em;
+}
+.fourth-part .contact-info {
+  width: 13em;
+  padding-left: 0;
+}
+.fourth-part .border-td {
+  padding-left: 5.3em;
+  height: 67px;
+}
+.fourth-part .border-td i {
+  padding: 0 0.7em;
+  color: #53230e;
+}
+.fourth-part .contact-info i {
+  padding: 0 0.7em;
+  color: #53230e;
+}
+.mobile-contacts table {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.mobile-contacts a,
+.fourth-part a {
+  text-decoration: underline;
+  color: rgba(91, 34, 9, 1);
+  transition: text-decoration 2s;
+}
+.mobile-contacts a:hover,
+.fourth-part a:hover {
+  text-decoration: none;
+}
+.mobile-contacts p {
+  display: inline;
+}
+
+.fifth-part {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.reviews {
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+.reviews a {
+  text-decoration: none;
+  background-color: #fcf9f5;
+  color: #53230e;
+  border: 2px solid #53230e;
+  border-radius: 50px;
+  padding: 0.7em 3.9em;
+  font-family: "Manrope-VariableFont_wght";
+  transition: 1s;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.reviews a:hover {
+  background-color: #53230e;
+  color: #fcf9f5;
+}
+.footer {
+  margin-top: 8em;
+  background-color: #53230e;
+  width: 100%;
+  padding: 0;
+}
+
+.footer .row {
+  background-color: #53230e;
+  width: 100%;
+  padding: 1.5em 0 1em 0;
+}
+.footer .logo {
+  color: #fcf9f5;
+}
+
+.development {
+  margin-top: 3em;
+  font-family: "Manrope-VariableFont_wght";
+  color: #fcf9f5;
+  opacity: 30%;
+}
+
+.development a {
+  font-size: 1.15em;
+}
+
+@media screen and (max-width: 1202px) and (min-width: 768px) {
+  .header-right {
+    padding: 1em 4em;
   }
-  .mobile-contacts a:hover, .third-part a:hover{
+
+  .header-right h1 {
+    margin: 1.8em 0 1em 0;
+    font-size: 2.5em;
+  }
+
+  .logo {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+
+  .header-left a {
     text-decoration: none;
-  }
-  .mobile-contacts p{
-    display: inline;
+    font-family: "Manrope-VariableFont_wght";
+    color: #fcf9f5;
+    font-size: 0em;
   }
 
-  .fourth-part{
+  .header-left {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0) 50.05%
+      ),
+      url("./img/Rectangle\ 10.svg");
+    padding: 2em 0;
+    background-size: cover;
+    background-position: right;
+  }
+
+  .header-right p:nth-child(3) {
+    font-size: 1em;
+  }
+
+  .contacts {
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  table {
+    font-size: 0.9em;
+    margin: 0 auto;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  table td,
+  th {
+    padding: 0.7em 1em;
+  }
+
+  .no-padding {
+    padding: 1em;
+  }
+  .no-padding-rl {
+    padding: 0.4em 0;
+  }
+
+  .table-left {
+    width: 10em;
+  }
+
+  .border-td {
+    width: auto;
+  }
+  .footer a,
+  .footer .contact-footer {
+    font-size: 0.9em;
+  }
+  .small-slide,
+  .small-slide_2 {
+    width: 3.5em;
+    margin: 2em 0.5em;
+  }
+
+  .development a {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .header-right {
+    background-image: linear-gradient(
+        180deg,
+        #fcf9f5 45.67%,
+        rgba(252, 249, 245, 0) 81.54%
+      ),
+      url("./img/Rectangle\ 10.svg");
+    background-position: right;
+    background-size: cover;
+    padding: 1em 4em;
     text-align: center;
-    font-size: 1.15em;
+  }
+
+  .header-right h1 {
+    margin: 3em 0 1em 0;
+    font-size: 2.7em;
+    color: #231f1d;
+  }
+  .header-right p:nth-child(3) {
+    padding: 0 1.5em;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+  .more {
+    margin-top: 15em;
+    margin-bottom: 14em;
+  }
+  .more a {
+    padding: 0.8em 4.4em;
   }
 
   .reviews {
-    margin-top: 4em;
-    margin-bottom: 3em;
+    margin-top: 2.5em;
   }
 
-  .reviews a{
-    text-decoration: none;
-    background-color: #FCF9F5;
-    color: #53230E;
-    border: 2px solid #53230E;
-    border-radius: 50px;
-    padding: 0.7em 3.9em;
-    font-family: "Manrope-VariableFont_wght";
-    transition: 1s;
-    margin-left: 1em;
-    margin-right: 1em
+  .reviews a {
+    padding: 0.8em 4.4em;
   }
-  
-  .reviews a:hover{
-    background-color: #53230E;
-    color: #FCF9F5;
+
+  .contacts {
+    color: rgba(83, 35, 14, 0.5);
+    font-size: 1em;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+  }
+  .contacts a {
+    text-decoration: none;
+    color: rgba(83, 35, 14, 0.5);
+  }
+  .heading {
+    font-size: 2.7em;
+    padding: 2em 0 0.8em 0;
+  }
+  table {
+    margin: 0 auto;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  table td,
+  th {
+    padding: 1.1em 1em;
+  }
+
+  .mobile-contacts table tr:first-of-type td {
+    padding: 0 1em 1.1em 1em;
+  }
+
+  .fifth-part p {
+    padding: 1.1em 1em;
+  }
+
+  .no-padding {
+    padding: 1em;
+  }
+  .no-padding-rl {
+    padding: 0.4em 0;
+  }
+
+  .table-left {
+    width: 10em;
+  }
+
+  .border-td {
+    width: auto;
+  }
+  .contacts p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .small-slide,
+  .small-slide_2 {
+    width: 5em;
+    margin: 3em 1em;
+  }
+  .footer .row {
+    padding: 1.5em;
+  }
+
+  .footer .logo {
+    margin-bottom: 2em;
   }
   .footer {
-    margin-top: 8em;
-    background-color: #53230E;
+    margin-top: 3.5em;
+    padding-bottom: 1em;
+  }
+
+  .development {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 476px) {
+  .header-right {
+    background-image: linear-gradient(
+        180deg,
+        #fcf9f5 45.67%,
+        rgba(252, 249, 245, 0) 81.54%
+      ),
+      url("./img/Rectangle\ 10.svg");
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+  }
+
+  .header-right h1 {
+    margin: 3em 0 1em 0;
+    font-size: 2.3em;
+    color: #231f1d;
+  }
+  .header-right p:nth-child(3) {
+    padding: 0 1.5em;
+  }
+  .nav {
+    justify-content: center;
+  }
+
+  .more {
+    margin-top: 15em;
+    margin-bottom: 14em;
+  }
+  .more a {
+    font-size: 1.2em;
+    padding: 0.7em 3.9em;
+  }
+
+  .reviews {
+    margin-top: 3em;
+  }
+
+  .reviews a {
+    padding: 0.7em 3.9em;
+  }
+
+  .reviews div {
+    margin-bottom: 3em;
+  }
+  .fifth-part {
+    font-size: 1.2em;
+  }
+  .contacts {
+    color: rgba(83, 35, 14, 0.5);
+    font-size: 0.9em;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+  }
+  .contacts a {
+    text-decoration: none;
+    color: rgba(83, 35, 14, 0.5);
+  }
+  .heading {
+    font-size: 2.3em;
+    padding: 2.5em 0 0.5em 0;
+  }
+  table {
+    margin: 0 auto;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  table td,
+  th {
+    padding: 0.8em 1.3em;
+  }
+
+  .mobile-contacts table tr:first-of-type td {
+    padding: 0 0.8em 1.3em 0.8em;
+  }
+
+  .fifth-part p {
+    padding: 0.8em 1.3em;
+  }
+  .no-padding {
+    padding: 0 1.3em;
+  }
+  .no-padding-rl {
+    padding: 0.4em 0;
+  }
+
+  .table-left {
+    width: 10.5em;
+  }
+
+  .border-td {
+    width: 7.7em;
+  }
+  .footer {
+    margin-top: 3em;
+    padding-bottom: 1.5em;
+  }
+  .footer .row {
+    background-color: #53230e;
     width: 100%;
     padding: 0;
   }
-  
-  .footer .row{
-    background-color: #53230E;
-    width: 100%;
-    padding: 1.5em 0 1em 0;
-  }
-  .footer .logo{
-    color: #FCF9F5;
+
+  .slides,
+  .slides_2 {
+    padding: 0.5em 0;
   }
 
-  .development{
+  .footer .logo {
+    padding: 1em 0;
+  }
+  .footer .nav {
+    margin-left: 1.5em;
+  }
+  .contacts p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .development {
+    margin-top: 0.5em;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 476px) and (min-width: 376px) {
+  .header-right {
+    background-image: linear-gradient(
+        180deg,
+        #fcf9f5 45.67%,
+        rgba(252, 249, 245, 0) 81.54%
+      ),
+      url("./img/Rectangle\ 10.svg");
+    background-position: right;
+    background-size: cover;
+    padding: 1em 3.5em;
+    text-align: center;
+  }
+
+  .header-right h1 {
+    margin: 2.5em 0.5em 1em 0.5em;
+    font-size: 2em;
+    color: #231f1d;
+  }
+  .header-right p:nth-child(3) {
+    font-size: 1.05em;
+    padding: 0 1.5em;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+  .more a {
+    font-size: 1.2em;
+    background-color: #53230e;
+    color: #fcf9f5;
+    padding: 0.7em 3.6em;
+  }
+  .reviews {
+    margin-top: 2.5em;
+  }
+  .reviews a {
+    padding: 0.7em 3.6em;
+  }
+
+  .reviews div {
+    margin-bottom: 2.5em;
+  }
+  .more {
+    margin-top: 15em;
+    margin-bottom: 14em;
+  }
+
+  .fifth-part {
+    font-size: 1.2em;
+  }
+  .contacts {
+    color: rgba(83, 35, 14, 0.5);
+    font-size: 0.82em;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+  }
+  .contacts a {
+    text-decoration: none;
+    color: rgba(83, 35, 14, 0.5);
+  }
+
+  .heading {
+    font-size: 2em;
+    padding: 2.5em 0 0.5em 0;
+  }
+  table {
+    font-size: 0.93em;
+    margin: 0 auto;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;
+  }
+
+  table td,
+  th {
+    padding: 0.9em 0.7em;
+  }
+
+  .mobile-contacts table tr:first-of-type td{
+    padding: 0 0.9em 0.7em 0.9em;
+  }
+
+  .fifth-part p {
+    padding: 0.9em 0.7em;
+  }
+  .no-padding {
+    padding: 0.7em;
+  }
+  .no-padding-rl {
+    padding: 0.4em 0;
+  }
+
+  .table-left {
+    width: 3em;
+  }
+
+  .border-td {
+    width: auto;
+  }
+  .footer {
     margin-top: 3em;
-    font-family: "Manrope-VariableFont_wght";
-    color: #FCF9F5;
-    opacity: 30%;
+    padding-bottom: 1em;
+  }
+  .footer .row {
+    padding: 0;
   }
 
-  .development a{
-    font-size: 1.15em;
-
+  .fifth-part {
+    font-size: 0.93em;
+  }
+  .slides,
+  .slides_2 {
+    padding: 0.9em 0;
+  }
+  .second-part {
+    padding-top: 3em;
+  }
+  .footer .logo {
+    padding: 1em 0;
+  }
+  .small-slide,
+  .small-slide_2 {
+    width: 3.5em;
+    margin: 1em 0.7em;
+  }
+  .footer .nav {
+    margin-left: 1.5em;
+  }
+  .contacts p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
-
-  @media screen and (max-width: 1202px) and (min-width: 768px)
-  {
-    .header-right{
-      padding: 1em 4em;
-    }
-  
-    .header-right h1{
-        margin: 1.8em 0. 1em 0;
-        font-size: 2.5em;
-      }
-  
-      .logo{
-        font-size: 1.2em;
-        margin-top: 1em;
-      }
-  
-      .header-left a{
-        text-decoration:  none;
-        font-family: "Manrope-VariableFont_wght";
-        color: #FCF9F5;
-        font-size: 0.em;
-      }
-  
-      .header-left{
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50.05%),
-        url("./img/Rectangle\ 10.svg");    
-        padding: 2em 0;
-        background-size: cover;
-        background-position: right;
-      }
-  
-      .header-right p:nth-child(3){
-        font-size: 1em;
-      }
-  
-      .contacts {
-        display: inline-block;
-        font-size: 0.9em;
-      }
-      table{
-        font-size: 0.9em;
-        margin: 0 auto;
-        border-bottom-width: 0 !important;
-        padding: 0 !important;
-      }
-  
-      table td, th{
-        padding:0.7em 1em;
-      }
-
-      .no-padding{
-        padding: 1em;
-      }
-      .no-padding-rl {
-        padding: 0.4em 0;
-    }
-  
-      .table-left{
-        width: 10em;
-      }
-  
-      .border-td{
-        width: auto;
-      }
-      .footer a, .footer .contact-footer{
-        font-size: 0.9em;
-      }
-      .small-slide, .small-slide_2{
-        width: 3.5em;
-        margin: 2em 0.5em;
-      }
-
-      .development a{
-        font-size: 0.9em;
-      }
-  
+  .development {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    text-align: center;
   }
-  
-  @media screen and (max-width: 767px) and (min-width: 576px)
-  {
-    .header-right{
-      background-image: linear-gradient(180deg, #FCF9F5 45.67%, rgba(252, 249, 245, 0) 81.54%), url("./img/Rectangle\ 10.svg"); 
-      background-position: right;
-        background-size: cover;
-      padding: 1em 4em;
-      text-align: center;
-    }
-  
-  
-    .header-right h1{
-        margin: 3em 0 1em 0;
-        font-size: 2.7em;
-        color: #231F1D;
-      }
-      .header-right p:nth-child(3){
-        padding: 0 1.5em;
-      }
-  
-    .nav{
-      justify-content: center;
-    }
-    .more{
-      margin-top: 15em;
-      margin-bottom: 14em;
-    }
-    .more a{
-      padding: 0.8em 4.4em;
-    }
-
-    .reviews{
-      margin-top: 2.5em;
-    }
-
-    .reviews a{
-      padding: 0.8em 4.4em;
-    }
-    
-    .contacts{
-      color:rgba(83, 35, 14, 0.5);
-      font-size: 1em;
-      justify-content: space-between;
-      padding: 2em  0 0 0;
-    }
-    .contacts a{
-      text-decoration: none;
-      color:rgba(83, 35, 14, 0.5);
-    }
-    .heading{
-      font-size: 2.7em;
-      padding: 2em 0 0.8em 0;
-    }
-    table{
-      margin: 0 auto;
-      border-bottom-width: 0 !important;
-      padding: 0 !important;
-    }
-  
-    table td, th{
-      padding: 1.1em 1em;
-    }
-
-    .fourth-part p{
-      padding: 1.1em 1em;
-    }
-
-    .no-padding{
-      padding: 1em;
-    }
-    .no-padding-rl {
-      padding: 0.4em 0;
+  .development a {
+    font-size: 0.93em;
   }
-  
-    .table-left{
-      width: 10em;
-    }
-  
-    .border-td{
-      width: auto;
-    }
-    .contacts p{
-      margin-left: 1em;
-      margin-right: 1em;
-    }
-    .small-slide, .small-slide_2{
-      width: 5em;
-      margin: 3em 1em;
-      
-    }
-    .footer .row{
-      padding: 1.5em;
-    }
+}
 
-    .footer .logo{
-      margin-bottom: 2em;
-    }
-    .footer{
-      margin-top: 3.5em;
-      padding-bottom: 1em;
-    }
-
-    .development{
-      margin-top: 1em;
-      margin-left: 1em;
-    }
-  
+@media screen and (max-width: 376px) {
+  body {
+    background-color: #fcf9f5;
   }
-  
-  
-  @media screen and (max-width: 576px) and (min-width: 476px)
-  {
-  
-    .header-right{
-      background-image: linear-gradient(180deg, #FCF9F5 45.67%, rgba(252, 249, 245, 0) 81.54%), url("./img/Rectangle\ 10.svg"); 
-      background-size: cover;
-      background-position: right;
-      text-align: center;
-    }
-  
-    .header-right h1{
-        margin: 3em 0 1em 0;
-        font-size: 2.3em;
-        color: #231F1D;
-      }
-      .header-right p:nth-child(3){
-        padding: 0 1.5em;
-      }
-      .nav{
-        justify-content: center;
-      }
-  
-      .more{
-        margin-top: 15em;
-        margin-bottom: 14em;
-      }
-    .more a{
-        font-size: 1.2em;
-        padding: 0.7em 3.9em;
-      }
-
-      .reviews{
-        margin-top: 3em;
-      }
-
-      .reviews a{
-        padding: 0.7em 3.9em;
-      }
-
-      .reviews div{
-        margin-bottom: 3em;
-      }
-      .fourth-part{
-        font-size: 1.2em;
-        
-      }
-      .contacts{
-        color:rgba(83, 35, 14, 0.5);
-        font-size: 0.9em;
-        justify-content: space-between;
-        padding: 2em  0 0 0;
-      }
-      .contacts a{
-        text-decoration: none;
-        color:rgba(83, 35, 14, 0.5);
-      }
-      .heading{
-        font-size: 2.3em;
-        padding: 2.5em 0 0.5em 0;
-      }
-      table{
-        margin: 0 auto;
-        border-bottom-width: 0 !important;
-        padding: 0 !important;
-      }
-  
-      table td, th{
-        padding: 0.8em 1.3em ;
-      }
-      
-      .fourth-part p{
-        padding: 0.8em 1.3em;
-      }
-      .no-padding{
-        padding: 0 1.3em;
-      }
-      .no-padding-rl {
-        padding: 0.4em 0;
-    }
-  
-      .table-left{
-        width: 10.5em;
-      }
-  
-      .border-td{
-        width: 7.7em;
-      }
-      .footer{
-        margin-top: 3em;
-        padding-bottom: 1.5em;
-      }
-      .footer .row{
-        background-color: #53230E;
-        width: 100%;
-        padding: 0;
-      }
-      
-      .slides, .slides_2{
-        padding: 0.5em 0;
-      }
-  
-      .footer .logo{
-        padding: 1em 0;
-      }
-      .footer .nav{
-        margin-left: 1.5em;
-      }
-      .contacts p{
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-      }
-      .development{
-        margin-top: 0.5em;
-        margin-left: 1em;
-      }
+  .header-right {
+    background-image: linear-gradient(
+        180deg,
+        #fcf9f5 52.67%,
+        rgba(252, 249, 245, 0) 81.54%
+      ),
+      url("./img/Rectangle\ 10.svg");
+    background-size: cover;
+    background-position: right;
+    padding: 1em 2em;
+    text-align: center;
   }
-  
-  @media screen and (max-width: 476px)and (min-width: 376px)
-  {
-  
-    .header-right{
-      background-image: linear-gradient(180deg, #FCF9F5 45.67%, rgba(252, 249, 245, 0) 81.54%), url("./img/Rectangle\ 10.svg"); 
-        background-position: right;
-        background-size: cover;
-        padding: 1em 3.5em;
-        text-align: center;
-    }
-  
-    .header-right h1{
-        margin: 2.5em 0.5em 1em 0.5em;
-        font-size: 2em;
-        color: #231F1D;
-      }
-      .header-right p:nth-child(3){
-        font-size: 1.05em;
-        padding: 0 1.5em;
-      }
-  
-      .nav{
-        justify-content: center;
-      }
-    .more a{
-        font-size: 1.2em;
-        background-color: #53230E;
-        color: #FCF9F5;
-        padding: 0.7em 3.6em;
-      }
-      .reviews{
-        margin-top: 2.5em;
-      }
-      .reviews a{
-        padding: 0.7em 3.6em;
-      }
-      
-      .reviews div{
-        margin-bottom: 2.5em;
-      }
-      .more{
-        margin-top: 15em;
-        margin-bottom: 14em;
-      }
 
-      .fourth-part{
-        font-size: 1.2em;
-
-      }
-      .contacts{
-        color:rgba(83, 35, 14, 0.5);
-        font-size: 0.82em;
-        justify-content: space-between;
-        padding: 2em  0 0 0;
-      }
-      .contacts a{
-        text-decoration: none;
-        color:rgba(83, 35, 14, 0.5);
-      }
-  
-      .heading{
-        font-size: 2em;
-        padding: 2.5em 0 0.5em 0;
-      }
-      table{
-        font-size: 0.93em;
-        margin: 0 auto;
-        border-bottom-width: 0 !important;
-        padding: 0 !important;
-      }
-  
-      table td, th{
-        padding: 0.9em 0.7em;
-      }
-
-      
-      .fourth-part p{
-        padding: 0.9em 0.7em;
-      }
-      .no-padding{
-        padding: 0.7em;
-      }
-      .no-padding-rl {
-        padding: 0.4em 0;
-    }
-  
-      .table-left{
-        width: 3em;
-      }
-  
-      .border-td{
-        width: auto;
-      }
-      .footer{
-        margin-top: 3em;
-        padding-bottom: 1em;
-      }
-      .footer .row{
-        padding: 0;
-      }
-      
-      .fourth-part{
-        font-size: 0.93em;
-
-      }
-      .slides, .slides_2{
-        padding: 0.9em 0;
-      }
-      .second-part{
-        padding-top: 3em;
-      }
-      .footer .logo{
-        padding: 1em 0;
-      }
-      .small-slide, .small-slide_2{
-        width: 3.5em;
-        margin: 1em 0.7em;
-        
-      }
-      .footer .nav{
-        margin-left: 1.5em;
-      }
-      .contacts p{
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-      }
-
-      .development{
-        margin-top: 0.5em;
-        margin-left: 1em;
-        text-align: center;
-
-      }
-      .development a{
-        font-size: 0.93em;
-      }
+  .header-right h1 {
+    margin: 2.5em 0.5em 1.2em 0.5em;
+    font-size: 1.7em;
+    color: #231f1d;
   }
-  
-  @media screen and (max-width: 376px)
-  {
-    body{
-      background-color: #FCF9F5;
-    }
-    .header-right{
-      background-image: linear-gradient(180deg, #FCF9F5 52.67%, rgba(252, 249, 245, 0) 81.54%), url("./img/Rectangle\ 10.svg"); 
-        background-size: cover;   
-        background-position: right;
-      padding: 1em 2em;
-      text-align: center;
-    }
-  
-    .header-right h1{
-        margin: 2.5em 0.5em 1.2em 0.5em;
-        font-size: 1.7em;
-        color: #231F1D;
-      }
-  
-      .logo{
-        font-size: 1em;
-      }
-      .header-right p:nth-child(3){
-        font-size: 1em;
-        padding: 0 2em;
-      }
-  
-      .nav{
-        justify-content: center;
-      }
-  
-      .more{
-        margin-top: 13em;
-        margin-bottom: 9em;
-      }
-    .more a{
-        font-size: 1em;
-        background-color: #53230E;
-        color: #FCF9F5;
-        padding: 0.7em 3.7em;
-      }
-      .reviews{
-        margin-top: 2.5em;
-      }
 
-      .fourth-part{
-        font-size: 0.93em;
+  .logo {
+    font-size: 1em;
+  }
+  .header-right p:nth-child(3) {
+    font-size: 1em;
+    padding: 0 2em;
+  }
 
-      }
-      .reviews a{
-        padding: 0.7em 3.7em;
-      }
+  .nav {
+    justify-content: center;
+  }
 
-      .reviews div{
-        margin-bottom: 2.5em;
-      }
+  .more {
+    margin-top: 13em;
+    margin-bottom: 9em;
+  }
+  .more a {
+    font-size: 1em;
+    background-color: #53230e;
+    color: #fcf9f5;
+    padding: 0.7em 3.7em;
+  }
+  .reviews {
+    margin-top: 2.5em;
+  }
 
-  
-      .contacts{
-        color:rgba(83, 35, 14, 0.5);
-        font-size: 0.8em;
-        justify-content: space-between;
-        padding: 2em  0 0 0;
-      }
-      .contacts a{
-        text-decoration: none;
-        color:rgba(83, 35, 14, 0.5);
-      }
-  
-      .heading{
-        font-size: 1.7em;
-        padding: 2.5em 0 0.5em 0;
-      }
-      table{
-        font-size: 0.93em;
-        margin: 0 auto;
-        border-bottom-width: 0 !important;
-        padding: 0 !important;
-      }
-  
-      table td, th{
-        padding: 0.9em 0.7em;
-      }
+  .fifth-part {
+    font-size: 0.93em;
+  }
+  .reviews a {
+    padding: 0.7em 3.7em;
+  }
 
-      .fourth-part p{
-        padding: 0.9em 0.7em;
-      }
+  .reviews div {
+    margin-bottom: 2.5em;
+  }
 
-      .no-padding{
-        padding: 0.7em;
-      }
-      .no-padding-rl {
-        padding: 0.4em 0;
-    }
-  
-      .table-left{
-        width: 3em;
-      }
-  
-      .border-td{
-        width: auto;
-      }
-      .footer{
-        margin-top: 3em;
-        padding-bottom: 1em;
-      }
-      .footer .row{
-        padding: 0;
-      }
-      
-      .slides, .slides_2{
-        padding: 0.7em 0;
-      }
-      .footer .logo{
-        padding: 1em 0;
-      }
-      .third-part .contact-info i{
-        padding: 0 0.7em;
-        color: #53230E;
-      }
-      .second-part{
-        padding-top: 3em;
-      }
-      .small-slide, .small-slide_2{
-        width: 3.1em;
-        margin: 1em 0.5em;
-        
-      }
-      .footer .nav{
-        margin-left: 1.5em;
-      }
-      .contacts p{
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-      }
+  .contacts {
+    color: rgba(83, 35, 14, 0.5);
+    font-size: 0.8em;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+  }
+  .contacts a {
+    text-decoration: none;
+    color: rgba(83, 35, 14, 0.5);
+  }
 
-      .development{
-        margin-top: 0.5em;
-        margin-left: 1em;
-        text-align: center;
-      }
+  .heading {
+    font-size: 1.7em;
+    padding: 2.5em 0 0.5em 0;
+  }
+  table {
+    font-size: 0.93em;
+    margin: 0 auto;
+    border-bottom-width: 0 !important;
+    padding: 0 !important;
+  }
 
-      .development a{
-        font-size: 0.93em;
-      }
-      
+  table td,
+  th {
+    padding: 0.9em 0.7em;
+  }
 
-    }
+  .mobile-contacts table tr:first-of-type td{
+    padding: 0 0.9em 0.7em 0.9em;
+  }
+
+  .fifth-part p {
+    padding: 0.9em 0.7em;
+  }
+
+  .no-padding {
+    padding: 0.7em;
+  }
+  .no-padding-rl {
+    padding: 0.4em 0;
+  }
+
+  .table-left {
+    width: 3em;
+  }
+
+  .border-td {
+    width: auto;
+  }
+  .footer {
+    margin-top: 3em;
+    padding-bottom: 1em;
+  }
+  .footer .row {
+    padding: 0;
+  }
+
+  .slides,
+  .slides_2 {
+    padding: 0.7em 0;
+  }
+  .footer .logo {
+    padding: 1em 0;
+  }
+  .fourth-part .contact-info i {
+    padding: 0 0.7em;
+    color: #53230e;
+  }
+  .second-part {
+    padding-top: 3em;
+  }
+  .small-slide,
+  .small-slide_2 {
+    width: 3.1em;
+    margin: 1em 0.5em;
+  }
+  .footer .nav {
+    margin-left: 1.5em;
+  }
+  .contacts p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .development {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    text-align: center;
+  }
+
+  .development a {
+    font-size: 0.93em;
+  }
+}
